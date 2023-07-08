@@ -5,6 +5,7 @@
   background: #202020;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 3;
   top: 0;
   transition: .5s ease-in-out;
   color: #fff;
@@ -19,10 +20,6 @@
   padding: 15px 60px;
   max-width: 1800px;
 }
-.header__logo {
-  font-size: 24px;
-  font-weight: bold;
-}
 .header__phone a {
   font-size: 18px;
   color: #fff;
@@ -32,14 +29,14 @@
   transform: translateY(-100%);
 }
 .header__logo {
-  flex: 0 0 12%;
+  flex: 0 0 8%;
 }
 .header__phone {
   flex: 0 0 20%;
   text-align: end;
 }
 .header__nav {
-  flex: 0 1 65%;
+  flex: 0 1 60%;
   /*display: flex;*/
   /*align-items: center;*/
   /*flex-direction: column;*/
