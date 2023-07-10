@@ -12,10 +12,10 @@
 <body>
   <ul class="header__nav_list-min ">
     <li class="header__nav_item nav-active"><a href="#">Главная</a></li>
-    <li class="header__nav_item"><a href="#">О&nbsp;нас</a></li>
-    <li class="header__nav_item"><a href="#">Портфолио</a></li>
-    <li class="header__nav_item"><a href="#">Прайс</a></li>
-    <li class="header__nav_item"><a href="#">Контакты</a></li>
+    <li class="header__nav_item"><a href="about.html">О&nbsp;нас</a></li>
+    <!-- <li class="header__nav_item"><a href="#">Портфолио</a></li> -->
+    <li class="header__nav_item"><a href="price.html">Прайс</a></li>
+    <li class="header__nav_item"><a href="contacts.html">Контакты</a></li>
   </ul>
   <header class="header">
     <div class="container header__container">
@@ -26,10 +26,10 @@
         </div>
         <ul class="header__nav_list">
           <li class="header__nav_item nav-active"><a href="#">Главная</a></li>
-          <li class="header__nav_item"><a href="#">О&nbsp;нас</a></li>
-          <li class="header__nav_item"><a href="#">Портфолио</a></li>
-          <li class="header__nav_item"><a href="#">Прайс</a></li>
-          <li class="header__nav_item"><a href="#">Контакты</a></li>
+          <li class="header__nav_item"><a href="about.html">О&nbsp;нас</a></li>
+          <!-- <li class="header__nav_item"><a href="#">Портфолио</a></li> -->
+          <li class="header__nav_item"><a href="price.html">Прайс</a></li>
+          <li class="header__nav_item"><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
       <div class="header__phone"><a href="tel:+79177904645">8-917-790-46-45</a></div>
@@ -41,8 +41,22 @@
         <h1 class="hero__content_title">Выполняем дорожно-строительные работы</h1>
         <div class="hero__content_btn">
           <button class="btn btn-orange" type="button">Оставить заявку</button>
-          <a href="price.html" class="btn btn-transparent" type="button">Узнать цены</a>
+          <button class="btn btn-transparent" type="button"><a href="price.html" >Узнать цены</a></button>
+          
         </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container about-container">
+        <p class="about__text">
+          Мы проводим любые дорожно-строительные работы. Выполняем ремонт и 
+          асфальтирование дорог, площадей и небольших площадок, пешеходных дорожек и 
+          тротуаров, любых объектов открытой планировки. 
+          Мы тщательно подбираем асфальтобетонные смеси под конкретные задачи 
+          и условия эксплуатации, используем только качественные, неоднократно
+          проверенные материалы. Располагаем современным парком специальной 
+          дорожно-строительной техники.  
+        </p>
       </div>
     </section>
     <section class="plus">
@@ -51,7 +65,7 @@
         <div class="plus__cart">
           <div class="plus__cart_item">
             <img class="cart-img" src="img/stryt.png" alt="Иконка">
-            <h3 class="item-title">Низкие цены на асфальтирование</h3>
+            <h3 class="item-title">Низкие цены на выполнение работ</h3>
           </div>
 
           <div class="plus__cart_item">
@@ -95,7 +109,7 @@
             </ul>
           </div>
 
-          <div class="example__cart_item">
+          <div class="example__cart_item second-item">
             <ul class="example-text">
               <li>
                 - подготовка верхнего слоя дороги для асфальтирования или укладки дорожных плит; 
@@ -138,10 +152,12 @@
 
   <footer class="footer">
     <div class="container footer-container">
-      <h3>Здесь мы продублируем меню и основные контакты</h3>
+      <h3>&copy;Здесь мы продублируем меню и основные контакты</h3>
     </div>
   </footer>
 
 <script src="js/script.js"></script>
+<script src="js/menu.js"></script>
+
 </body>
 </html>

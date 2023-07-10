@@ -86,7 +86,8 @@ textarea {resize:horizontal;}
   padding: 10px 20px;
   color: #fff;
   border-radius: 10px;
-  font-size: 1.3em
+  font-size: 1.3em;
+  font-weight: 300;
 }
 
 .btn:hover {
