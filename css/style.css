@@ -342,6 +342,22 @@ th, td {
   margin-bottom: 40px;
 }
 
+/*CONTACTS*/
+.contacts {
+  background-color:#2c2c2c;
+  color: #fff;
+}
+.hero-item {
+  margin-bottom: 20px;
+}
+
+/*MAP*/
+.about__container_map {
+  margin: 0 auto;
+  min-width: 90%;
+  height: 60vh;
+}
+
 /*FOOTER*/
 .footer-field {
   background-color:#202020;
@@ -395,12 +411,13 @@ th, td {
   right: 0;
   bottom: 0;
   background-color: #46444499;
+  z-index: 100;
 
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -550,8 +567,9 @@ form input[type=submit]:hover {
   }
   .header__nav_list-min {
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     top: 0;
     bottom: 0;
@@ -562,7 +580,7 @@ form input[type=submit]:hover {
     transition: transform .3s ease-in-out;
   }
   .header__nav_list-min li {
-    margin-bottom: 15px;
+    margin-bottom: 7vh;
   }
   .nav__list-active {
     transform: translate(0%);

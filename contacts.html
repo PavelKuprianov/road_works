@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script
+    src="https://api-maps.yandex.ru/2.1/?apikey=05f1e5be-4d2c-4095-9649-2c54e52a31fc&lang=ru_RU"
+    type="text/javascript"
+  ></script>
 </head>
 <body>
   <ul class="header__nav_list-min ">
@@ -37,11 +42,35 @@
       <div class="header__phone"><a href="tel:+79177904645">8-917-790-46-45</a></div>
     </div>
   </header>
-    <section class="price">
-      <div class="container about-container">
+    <main class="contacts">
+      <div class="container ">
         <h1 class="hero__content_title price-title">Наши контакты</h1>
+          <div class="hero__text-sevices">
+            <ul class="hero__text_list-services">
+              <li class="hero-item">Мы работаем ежедневно с 8.00 до 22.00</li>
+              <li class="hero-item"> </li>
+              <li class="hero-item">Наш телефон: <a class="footer__tel_number" href="tel:+79876436715">+7 (987) 643-67-15</a></li>
+              <li class="hero-item"> </li>
+              <li class="hero-item">Адрес нашей почты: <a class="footer__tel_number" href="mailto:avtovkus@mail.ru">avtovkus@mail.ru</a></li>
+              <li class="hero-item"></li>
+              <li class="hero-item">Наш адрес: Киров, улица Деповская, дом 63</li>
+            </ul>
+            <div class="hero__text_btn">
+              <button class="hero-btn btn btn-orange feedback">Заказать звонок</button>
+            </div>
 
+          </div>
+          <div class="big-car img-contacts"></div>
 
+        <section class="container map">
+          <h2 id="mymap" class="plus__title">Мы на карте</h2>
+          <div class="about__container_map">
+            <div
+              id="map"
+              class="map-excurs"
+              style="width: 100%; height: 100%;"
+            ></div>
+          </div>
 
 
         <div class="service-ps price-servise-ps">
@@ -53,7 +82,7 @@
     
         </div>
       </div>
-    </section>
+    </main>
 
 
 
