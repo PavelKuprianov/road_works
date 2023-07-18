@@ -21,8 +21,7 @@ document.addEventListener('DOMContentLoaded', () => { // DOM готов к вз�
 	const onScrollHeader = () => { // объявляем основную функцию onScrollHeader
 
 		const header = document.querySelector('.header') // находим header и записываем в константу
-
-		let prevScroll = window.pageYOffset // узнаем на сколько была прокручена страница ранее
+ 		let prevScroll = window.pageYOffset // узнаем на сколько была прокручена страница ранее
 		let currentScroll // на сколько прокручена страница сейчас (пока нет значения)
 
 		window.addEventListener('scroll', () => { // при прокрутке страницы
@@ -47,6 +46,36 @@ document.addEventListener('DOMContentLoaded', () => { // DOM готов к вз�
 	onScrollHeader() // вызываем основную функцию onScrollHeader
 
 
+	//Модальное окно
+	const btnOpen = document.querySelectorAll('.feedback');
+	const btnClose = document.querySelector('.close-modal-img');
+	const modal = document.querySelector('.modal');
+	const form = document.querySelector('.form');
+
+	const modalViewHandler = () => {
+		modal.classList.toggle('modal--open');
+	}
+
+	btnOpen.forEach((item) => {
+		item.addEventListener('click', modalViewHandler);
+	})
+
+	btnClose.addEventListener('click', modalViewHandler);
+
+	form.addEventListener('submit', (e) => {
+		modal.classList.remove('modal--open');
+		e.preventDefault();
+	});
+
+	modal.addEventListener('click', (e)=> {
+		if(e.target != document.querySelector('.modal-wrap')) {
+			modal.classList.remove('modal--open');
+		}
+	})
+
+	const handleReload = () => {
+		location.reload();
+	}
 });
 
 
